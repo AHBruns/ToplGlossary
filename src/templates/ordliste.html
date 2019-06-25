@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Ordliste</title>
+        <script src="{{ url_for('static', filename='js/search.js') }}"></script>
+    </head>
+    <body style="margin: 0; background: yellow;">
+        <div
+            id="search_container"
+            style="
+                width: 100vw;
+                height: 100vh;
+                position: relative;
+                background: yellow;
+        ">
+            <input
+                type="text"
+                id="search"
+                onkeypress="listener(event)"
+                style="
+                    width: 25vw;
+                    height: 5vh;
+                    margin-left: 37.5vw;
+                    margin-top: 47.5vh;
+                    position: absolute;
+                    font-size: xx-large;
+                    text-align: center;
+            ">
+        </div>
+        <div
+            id="results"
+            style="
+                top: 15vh;
+                width: 100%;
+                position: absolute;
+                text-align: center;
+        "></div>
+    </body>
+</html>
